@@ -639,6 +639,31 @@
       "enable_register":"0",
       "enable_register_bits": ["0"]
   },
+  "flash-optbytes-bank1": {
+      "address":"0x1FFFC000",
+      "size":"0x20",
+      "memory_subregion_mask":"0",
+      "irqs": [
+        0, 0, 0, 0
+      ],
+      "read_only": "false",
+      "permission": "PERM_RES_TSK_UPGRADE",
+      "enable_register":"0",
+      "enable_register_bits": ["0"]
+  },
+  "flash-optbytes-bank2": {
+      "address":"0x1FFEC000",
+      "size":"0x20",
+      "memory_subregion_mask":"0",
+      "irqs": [
+        0, 0, 0, 0
+      ],
+      "read_only": "false",
+      "permission": "PERM_RES_TSK_UPGRADE",
+      "enable_register":"0",
+      "enable_register_bits": ["0"]
+  },
+
   "flash-memory": {
       "address":"0x08000000",
       "size":"0x100000",
