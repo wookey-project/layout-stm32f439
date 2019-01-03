@@ -663,6 +663,31 @@
       "enable_register":"0",
       "enable_register_bits": ["0"]
   },
+  "flash-system": {
+      "address":"0x1FFF0000",
+      "size":"0x7800",
+      "memory_subregion_mask":"0",
+      "irqs": [
+        "FLASH_IRQ", 0, 0, 0
+      ],
+      "read_only": "true",
+      "permission": "PERM_RES_TSK_UPGRADE",
+      "enable_register":"0",
+      "enable_register_bits": ["0"]
+  },
+  "flash-otp": {
+      "address":"0x1FFF7800",
+      "size":"0x400",
+      "memory_subregion_mask":"0",
+      "irqs": [
+        "FLASH_IRQ", 0, 0, 0
+      ],
+      "read_only": "false",
+      "permission": "PERM_RES_TSK_UPGRADE",
+      "enable_register":"0",
+      "enable_register_bits": ["0"]
+  },
+
   "flash-optbytes-bank1": {
       "address":"0x1FFFC000",
       "size":"0x20",
@@ -699,46 +724,10 @@
       "enable_register":"0",
       "enable_register_bits": ["0"]
   },
-  "flash-fw-flip-kern": {
-      "address":"0x08020000",
-      "size":"0x10000",
-      "memory_subregion_mask":"0",
-      "irqs": [
-        0, 0, 0, 0
-      ],
-      "read_only": "false",
-      "permission": "PERM_RES_TSK_UPGRADE",
-      "enable_register":"0",
-      "enable_register_bits": ["0"]
-  },
-  "flash-fw-flip-apps": {
-      "address":"0x08080000",
-      "size":"0x80000",
-      "memory_subregion_mask":"0",
-      "irqs": [
-        0, 0, 0, 0
-      ],
-      "read_only": "false",
-      "permission": "PERM_RES_TSK_UPGRADE",
-      "enable_register":"0",
-      "enable_register_bits": ["0"]
-  },
-  "flash-dfu-flip-kern": {
-      "address":"0x08030000",
-      "size":"0x10000",
-      "memory_subregion_mask":"0",
-      "irqs": [
-        0, 0, 0, 0
-      ],
-      "read_only": "false",
-      "permission": "PERM_RES_TSK_UPGRADE",
-      "enable_register":"0",
-      "enable_register_bits": ["0"]
-  },
-  "flash-dfu-flip-apps": {
-      "address":"0x08040000",
-      "size":"0x40000",
-      "memory_subregion_mask":"0",
+  "flash-flip": {
+      "address":"0x08000000",
+      "size":"0x100000",
+      "memory_subregion_mask":"0b00000001",
       "irqs": [
         0, 0, 0, 0
       ],
@@ -759,46 +748,10 @@
       "enable_register":"0",
       "enable_register_bits": ["0"]
   },
-  "flash-fw-flop-kern": {
-      "address":"0x08120000",
-      "size":"0x10000",
-      "memory_subregion_mask":"0",
-      "irqs": [
-        0, 0, 0, 0
-      ],
-      "read_only": "false",
-      "permission": "PERM_RES_TSK_UPGRADE",
-      "enable_register":"0",
-      "enable_register_bits": ["0"]
-  },
-  "flash-fw-flop-apps": {
-      "address":"0x08180000",
-      "size":"0x80000",
-      "memory_subregion_mask":"0",
-      "irqs": [
-        0, 0, 0, 0
-      ],
-      "read_only": "false",
-      "permission": "PERM_RES_TSK_UPGRADE",
-      "enable_register":"0",
-      "enable_register_bits": ["0"]
-  },
-  "flash-dfu-flop-kern": {
-      "address":"0x08130000",
-      "size":"0x10000",
-      "memory_subregion_mask":"0",
-      "irqs": [
-        0, 0, 0, 0
-      ],
-      "read_only": "false",
-      "permission": "PERM_RES_TSK_UPGRADE",
-      "enable_register":"0",
-      "enable_register_bits": ["0"]
-  },
-  "flash-dfu-flop-apps": {
-      "address":"0x08140000",
-      "size":"0x40000",
-      "memory_subregion_mask":"0",
+  "flash-fw-flop": {
+      "address":"0x08100000",
+      "size":"0x100000",
+      "memory_subregion_mask":"0b00000001",
       "irqs": [
         0, 0, 0, 0
       ],
