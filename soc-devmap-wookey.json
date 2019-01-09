@@ -251,6 +251,18 @@
       "enable_register":"r_CORTEX_M_RCC_AHB2ENR",
       "enable_register_bits":["RCC_AHB2ENR_CRYPEN"]
   },
+  "hash": {
+      "address":"0x50060400",
+      "size":"0x400",
+      "memory_subregion_mask":"0",
+      "irqs": [
+          "HASH_RNG_IRQ", 0, 0, 0
+      ],
+      "read_only": "false",
+      "permission": "PERM_RES_DEV_CRYPTO_USR",
+      "enable_register":"r_CORTEX_M_RCC_AHB2ENR",
+      "enable_register_bits":["RCC_AHB2ENR_HASHEN"]
+  },
   "usb-otg-fs": {
       "address":"0x50000000",
       "size":"0x4000",
