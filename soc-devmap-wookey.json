@@ -663,7 +663,7 @@
       "enable_register":"r_CORTEX_M_RCC_APB1ENR",
       "enable_register_bits": ["RCC_APB1ENR_TIM14EN"]
   },
-  "flash-control": {
+  "flash-ctrl": {
       "address":"0x40023C00",
       "size":"0x400",
       "memory_subregion_mask":"0",
@@ -675,6 +675,19 @@
       "enable_register":"0",
       "enable_register_bits": ["0"]
   },
+  "flash-ctrl-2": {
+      "address":"0x40023C00",
+      "size":"0x100",
+      "memory_subregion_mask":"0",
+      "irqs": [
+        "FLASH_IRQ", 0, 0, 0
+      ],
+      "read_only": "false",
+      "permission": "PERM_RES_TSK_UPGRADE",
+      "enable_register":"0",
+      "enable_register_bits": ["0"]
+  },
+
   "flash-system": {
       "address":"0x1FFF0000",
       "size":"0x7800",
@@ -725,8 +738,8 @@
       "enable_register_bits": ["0"]
   },
   "flash-flip-shr": {
-      "address":"0x08010000",
-      "size":"0x10000",
+      "address":"0x08008000",
+      "size":"0x8000",
       "memory_subregion_mask":"0",
       "irqs": [
         0, 0, 0, 0
@@ -749,8 +762,8 @@
       "enable_register_bits": ["0"]
   },
   "flash-flop-shr": {
-      "address":"0x08110000",
-      "size":"0x10000",
+      "address":"0x08108000",
+      "size":"0x8000",
       "memory_subregion_mask":"0",
       "irqs": [
         0, 0, 0, 0
