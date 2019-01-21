@@ -738,8 +738,8 @@
       "enable_register_bits": ["0"]
   },
   "flash-flip-shr": {
-      "address":"0x0800C000",
-      "size":"0x4000",
+      "address":"0x08008000",
+      "size":"0x8000",
       "memory_subregion_mask":"0",
       "irqs": [
         0, 0, 0, 0
@@ -762,8 +762,8 @@
       "enable_register_bits": ["0"]
   },
   "flash-flop-shr": {
-      "address":"0x0810C000",
-      "size":"0x4000",
+      "address":"0x08108000",
+      "size":"0x8000",
       "memory_subregion_mask":"0",
       "irqs": [
         0, 0, 0, 0
