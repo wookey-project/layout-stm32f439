@@ -433,7 +433,11 @@
       "read_only": "false",
       "permission": "PERM_RES_DEV_BUSES",
       "enable_register":"r_CORTEX_M_RCC_APB2ENR",
-      "enable_register_bits": ["RCC_APB2ENR_USART1EN"]
+      "enable_register_bits": ["RCC_APB2ENR_USART1EN"],
+      "gpios": [
+          { "port":"GPIO_PA", "pin":"9" },
+          { "port":"GPIO_PA", "pin":"8" }
+      ]
   },
   "usart6": {
       "address":"0x40011400",
@@ -445,7 +449,11 @@
       "read_only": "false",
       "permission": "PERM_RES_DEV_BUSES",
       "enable_register":"r_CORTEX_M_RCC_APB2ENR",
-      "enable_register_bits": ["RCC_APB2ENR_USART6EN"]
+      "enable_register_bits": ["RCC_APB2ENR_USART6EN"],
+      "gpios": [
+          { "port":"GPIO_PC", "pin":"6" },
+          { "port":"GPIO_PC", "pin":"7" }
+      ]
   },
   "usart2": {
       "address":"0x40004400",
