@@ -339,6 +339,12 @@
       "irqs_literal": [
         83, 58, 0, 0
       ],
+      "gpios": [
+        { "name":"USB_FS_SOF", "port":"GPIO_PA", "pin":"8" },
+        { "name":"USB_FS_VBUS", "port":"GPIO_PA", "pin":"9" },
+        { "name":"USB_FS_DM", "port":"GPIO_PA", "pin":"11" },
+        { "name":"USB_FS_DP", "port":"GPIO_PA", "pin":"12" }
+      ],
       "read_only": "false",
       "permission": "PERM_RES_DEV_BUSES",
       "enable_register":"r_CORTEX_M_RCC_AHB2ENR",
@@ -353,6 +359,21 @@
       ],
       "irqs_literal": [
         93, 92, 91, 90
+      ],
+      "gpios": [
+        { "name":"USB_HS_ULPI_D0", "port":"GPIO_PA", "pin":"3" },
+        { "name":"USB_HS_ULPI_CLK", "port":"GPIO_PA", "pin":"5" },
+        { "name":"USB_HS_ULPI_D1", "port":"GPIO_PB", "pin":"0" },
+        { "name":"USB_HS_ULPI_D2", "port":"GPIO_PB", "pin":"1" },
+        { "name":"USB_HS_ULPI_D3", "port":"GPIO_PB", "pin":"10" },
+        { "name":"USB_HS_ULPI_D4", "port":"GPIO_PB", "pin":"11" },
+        { "name":"USB_HS_ULPI_D5", "port":"GPIO_PB", "pin":"12" },
+        { "name":"USB_HS_ULPI_D6", "port":"GPIO_PB", "pin":"13" },
+        { "name":"USB_HS_ULPI_D7", "port":"GPIO_PB", "pin":"5" },
+        { "name":"USB_HS_ULPI_STP", "port":"GPIO_PC", "pin":"0" },
+        { "name":"USB_HS_ULPI_DIR", "port":"GPIO_PC", "pin":"2" },
+        { "name":"USB_HS_ULPI_NXT", "port":"GPIO_PC", "pin":"3" },
+        { "name":"USB_HS_RESET",   "port":"GPIO_PE", "pin":"13" }
       ],
       "read_only": "false",
       "permission": "PERM_RES_DEV_BUSES",
@@ -371,6 +392,16 @@
       ],
       "irqs_literal": [
         65, 0, 0, 0
+      ],
+      "gpios": [
+        { "name":"SDIO_CLK", "port":"GPIO_PC", "pin":"12" },
+        { "name":"SDIO_D0", "port":"GPIO_PC", "pin":"8" },
+        { "name":"SDIO_D1", "port":"GPIO_PC", "pin":"9" },
+        { "name":"SDIO_D2", "port":"GPIO_PC", "pin":"10" },
+        { "name":"SDIO_D3", "port":"GPIO_PC", "pin":"11" },
+        { "name":"SDIO_CMD", "port":"GPIO_PD", "pin":"12" },
+        { "name":"SDIO_DIR", "port":"GPIO_PC", "pin":"2" },
+        { "name":"SDIO_RMV", "port":"GPIO_PC", "pin":"7" }
       ],
       "read_only": "false",
       "permission": "PERM_RES_DEV_BUSES",
