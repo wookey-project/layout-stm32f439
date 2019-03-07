@@ -129,11 +129,12 @@ def generate_c():
 
     for device in data:
         dev = data[device];
-        if dev["size"] == "0":
-            # we do not generate headers for unmappable device (e.g. DMA)
+        if dev["size"] == "0" and dev["type"] == "block":
+            # we do not generate headers for unmappable block device (e.g. DMA)
             continue;
         devfilename = device + ".h";
         devheadername = device.upper() + "_H_";
+
         with open(os.path.join(outdir, devfilename), "w") as devfile:
             # header (license)
             devfile.write(c_header);
@@ -142,12 +143,13 @@ def generate_c():
             devfile.write("# define %s\n" % devheadername);
             devfile.write("\n#include \"generated/devinfo.h\"\n\n");
 
-            # generating defines for IRQ values
-            irqs = dev["irqs"];
-            for index, irq in enumerate(irqs):
-                if irq != 0:
-                    irqvals = dev["irqs_literal"];
-                    devfile.write("#define %s %d\n" % (irq, irqvals[index]));
+            if dev["type"] == "block":
+                # generating defines for IRQ values
+                irqs = dev["irqs"];
+                for index, irq in enumerate(irqs):
+                    if irq != 0:
+                        irqvals = dev["irqs_literal"];
+                        devfile.write("#define %s %d\n" % (irq, irqvals[index]));
 
             if 'gpios' in dev:
                 gpios = dev["gpios"];
@@ -162,12 +164,16 @@ def generate_c():
             # device size
             devfile.write("    .size    = %s,\n" % dev["size"]);
             # device irqs
-            irqs = dev["irqs"];
-            devfile.write("    .irqs = { ");
-            devfile.write("    %s" % irqs[0]);
-            for irq in irqs[1:]:
-                devfile.write(", %s" % irq);
-            devfile.write(" },\n");
+            if 'irqs' in dev:
+                irqs = dev["irqs"];
+                devfile.write("    .irqs = { ");
+                devfile.write("%s" % irqs[0]);
+                for irq in irqs[1:]:
+                    devfile.write(", %s" % irq);
+                devfile.write(" },\n");
+            else:
+                devfile.write("    .irqs = { 0, 0, 0, 0 },\n");
+
             # device gpios
             devfile.write("    .gpios = {\n");
             if 'gpios' in dev:
@@ -181,6 +187,7 @@ def generate_c():
             else:
                 for i in range(1,13):
                     devfile.write("      { 0, 0 },\n");
+
             devfile.write("    }\n");
             devfile.write("};\n");
 

@@ -1,5 +1,6 @@
 {
   "dma1-info": {
+      "type":"block",
       "address":"0x40026000",
       "size":"0",
       "memory_subregion_mask":"0",
@@ -15,6 +16,7 @@
       "enable_register_bits": ["RCC_AHB1ENR_DMA1EN"]
   },
   "dma1-str0": {
+      "type":"block",
       "address":"0x40026028",
       "size":"0",
       "memory_subregion_mask":"0",
@@ -30,6 +32,7 @@
       "enable_register_bits": ["RCC_AHB1ENR_DMA1EN"]
   },
   "dma1-str1": {
+      "type":"block",
       "address":"0x40026028",
       "size":"0",
       "memory_subregion_mask":"0",
@@ -45,6 +48,7 @@
       "enable_register_bits": ["RCC_AHB1ENR_DMA1EN"]
   },
   "dma1-str2": {
+      "type":"block",
       "address":"0x40026040",
       "size":"0",
       "memory_subregion_mask":"0",
@@ -60,6 +64,7 @@
       "enable_register_bits": ["RCC_AHB1ENR_DMA1EN"]
   },
   "dma1-str3": {
+      "type":"block",
       "address":"0x40026058",
       "size":"0",
       "memory_subregion_mask":"0",
@@ -75,6 +80,7 @@
       "enable_register_bits": ["RCC_AHB1ENR_DMA1EN"]
   },
   "dma1-str4": {
+      "type":"block",
       "address":"0x40026070",
       "size":"0",
       "memory_subregion_mask":"0",
@@ -90,6 +96,7 @@
       "enable_register_bits": ["RCC_AHB1ENR_DMA1EN"]
   },
   "dma1-str5": {
+      "type":"block",
       "address":"0x40026088",
       "size":"0",
       "memory_subregion_mask":"0",
@@ -105,6 +112,7 @@
       "enable_register_bits": ["RCC_AHB1ENR_DMA1EN"]
   },
   "dma1-str6": {
+      "type":"block",
       "address":"0x400260a0",
       "size":"0",
       "memory_subregion_mask":"0",
@@ -120,6 +128,7 @@
       "enable_register_bits": ["RCC_AHB1ENR_DMA1EN"]
   },
   "dma1-str7": {
+      "type":"block",
       "address":"0x400260b8",
       "size":"0",
       "memory_subregion_mask":"0",
@@ -135,6 +144,7 @@
       "enable_register_bits": ["RCC_AHB1ENR_DMA1EN"]
   },
   "dma2-info": {
+      "type":"block",
       "address":"0x40026400",
       "size":"0",
       "memory_subregion_mask":"0",
@@ -150,6 +160,7 @@
       "enable_register_bits": ["RCC_AHB1ENR_DMA2EN"]
   },
   "dma2-str0": {
+      "type":"block",
       "address":"0x40026410",
       "size":"0",
       "memory_subregion_mask":"0",
@@ -165,6 +176,7 @@
       "enable_register_bits": ["RCC_AHB1ENR_DMA2EN"]
   },
   "dma2-str1": {
+      "type":"block",
       "address":"0x40026428",
       "size":"0",
       "memory_subregion_mask":"0",
@@ -180,6 +192,7 @@
       "enable_register_bits": ["RCC_AHB1ENR_DMA2EN"]
   },
   "dma2-str2": {
+      "type":"block",
       "address":"0x40026440",
       "size":"0",
       "memory_subregion_mask":"0",
@@ -195,6 +208,7 @@
       "enable_register_bits": ["RCC_AHB1ENR_DMA2EN"]
   },
   "dma2-str3": {
+      "type":"block",
       "address":"0x40026458",
       "size":"0",
       "memory_subregion_mask":"0",
@@ -210,6 +224,7 @@
       "enable_register_bits": ["RCC_AHB1ENR_DMA2EN"]
   },
   "dma2-str4": {
+      "type":"block",
       "address":"0x40026470",
       "size":"0",
       "memory_subregion_mask":"0",
@@ -225,6 +240,7 @@
       "enable_register_bits": ["RCC_AHB1ENR_DMA2EN"]
   },
   "dma2-str5": {
+      "type":"block",
       "address":"0x40026488",
       "size":"0",
       "memory_subregion_mask":"0",
@@ -240,6 +256,7 @@
       "enable_register_bits": ["RCC_AHB1ENR_DMA2EN"]
   },
   "dma2-str6": {
+      "type":"block",
       "address":"0x400264a0",
       "size":"0",
       "memory_subregion_mask":"0",
@@ -255,6 +272,7 @@
       "enable_register_bits": ["RCC_AHB1ENR_DMA2EN"]
   },
   "dma2-str7": {
+      "type":"block",
       "address":"0x400264b8",
       "size":"0",
       "memory_subregion_mask":"0",
@@ -270,6 +288,7 @@
       "enable_register_bits": ["RCC_AHB1ENR_DMA2EN"]
   },
   "cryp-cfg": {
+      "type":"block",
       "address":"0x50060000",
       "size":"0x800",
       "memory_subregion_mask":"0",
@@ -285,6 +304,7 @@
       "enable_register_bits":["RCC_AHB2ENR_CRYPEN"]
   },
   "cryp-user": {
+      "type":"block",
       "address":"0x50060000",
       "size":"0x100",
       "memory_subregion_mask":"0b11100010",
@@ -300,6 +320,7 @@
       "enable_register_bits":["RCC_AHB2ENR_CRYPEN"]
   },
   "cryp": {
+      "type":"block",
       "address":"0x50060000",
       "size":"0x400",
       "memory_subregion_mask":"0",
@@ -315,6 +336,7 @@
       "enable_register_bits":["RCC_AHB2ENR_CRYPEN"]
   },
   "hash": {
+      "type":"block",
       "address":"0x50060400",
       "size":"0x400",
       "memory_subregion_mask":"0",
@@ -330,6 +352,7 @@
       "enable_register_bits":["RCC_AHB2ENR_HASHEN"]
   },
   "usb-otg-fs": {
+      "type":"block",
       "address":"0x50000000",
       "size":"0x4000",
       "memory_subregion_mask":"0",
@@ -351,6 +374,7 @@
       "enable_register_bits": ["RCC_AHB2ENR_OTGFSEN"]
   },
   "usb-otg-hs": {
+      "type":"block",
       "address":"0x40040000",
       "size":"0x4000",
       "memory_subregion_mask":"0",
@@ -384,6 +408,7 @@
       ]
   },
   "sdio": {
+      "type":"block",
       "address":"0x40012c00",
       "size":"0x400",
       "memory_subregion_mask":"0",
@@ -409,6 +434,7 @@
   },
 
   "eth-mac": {
+      "type":"block",
       "address":"0x40028000",
       "size":"0x1400",
       "memory_subregion_mask":"0",
@@ -424,6 +450,7 @@
       "enable_register_bits": ["RCC_AHB1ENR_ETHMACEN"]
   },
   "crc": {
+      "type":"block",
       "address":"0x40023000",
       "size":"0x400",
       "memory_subregion_mask":"0",
@@ -439,6 +466,7 @@
       "enable_register_bits": ["RCC_AHB1ENR_CRCEN"]
   },
   "spi1": {
+      "type":"block",
       "address":"0x40013000",
       "size":"0x400",
       "memory_subregion_mask":"0",
@@ -460,6 +488,7 @@
       "enable_register_bits": ["RCC_APB2ENR_SPI1EN"]
   },
   "spi2": {
+      "type":"block",
       "address":"0x40003800",
       "size":"0x400",
       "memory_subregion_mask":"0",
@@ -475,6 +504,7 @@
       "enable_register_bits": ["RCC_APB1ENR_SPI2EN"]
   },
   "spi3": {
+      "type":"block",
       "address":"0x40003C00",
       "size":"0x400",
       "memory_subregion_mask":"0",
@@ -490,6 +520,7 @@
       "enable_register_bits": ["RCC_APB1ENR_SPI3EN"]
   },
   "i2c1": {
+      "type":"block",
       "address":"0x40005400",
       "size":"0x400",
       "memory_subregion_mask":"0",
@@ -505,6 +536,7 @@
       "enable_register_bits": ["RCC_APB1ENR_I2C1EN"]
   },
   "i2c2": {
+      "type":"block",
       "address":"0x40005800",
       "size":"0x400",
       "memory_subregion_mask":"0",
@@ -520,6 +552,7 @@
       "enable_register_bits": ["RCC_APB1ENR_I2C2EN"]
   },
   "i2c3": {
+      "type":"block",
       "address":"0x40005C00",
       "size":"0x400",
       "memory_subregion_mask":"0",
@@ -535,6 +568,7 @@
       "enable_register_bits": ["RCC_APB1ENR_I2C3EN"]
   },
   "can1": {
+      "type":"block",
       "address":"0x40006400",
       "size":"0x400",
       "memory_subregion_mask":"0",
@@ -550,6 +584,7 @@
       "enable_register_bits": ["RCC_APB1ENR_CAN1EN"]
   },
   "can2": {
+      "type":"block",
       "address":"0x40006800",
       "size":"0x400",
       "memory_subregion_mask":"0",
@@ -565,6 +600,7 @@
       "enable_register_bits": ["RCC_APB1ENR_CAN2EN"]
   },
   "usart1": {
+      "type":"block",
       "address":"0x40011000",
       "size":"0x400",
       "memory_subregion_mask":"0",
@@ -586,6 +622,7 @@
       "enable_register_bits": ["RCC_APB2ENR_USART1EN"]
   },
   "usart6": {
+      "type":"block",
       "address":"0x40011400",
       "size":"0x400",
       "memory_subregion_mask":"0",
@@ -607,6 +644,7 @@
       "enable_register_bits": ["RCC_APB2ENR_USART6EN"]
   },
   "usart2": {
+      "type":"block",
       "address":"0x40004400",
       "size":"0x400",
       "memory_subregion_mask":"0",
@@ -628,6 +666,7 @@
       "enable_register_bits": ["RCC_APB1ENR_USART2EN"]
   },
   "usart3": {
+      "type":"block",
       "address":"0x40004800",
       "size":"0x400",
       "memory_subregion_mask":"0",
@@ -649,6 +688,7 @@
       "enable_register_bits": ["RCC_APB1ENR_USART3EN"]
   },
   "uart4": {
+      "type":"block",
       "address":"0x40004C00",
       "size":"0x400",
       "memory_subregion_mask":"0",
@@ -668,6 +708,7 @@
       "enable_register_bits": ["RCC_APB1ENR_UART4EN"]
   },
   "uart5": {
+      "type":"block",
       "address":"0x40005000",
       "size":"0x400",
       "memory_subregion_mask":"0",
@@ -687,6 +728,7 @@
       "enable_register_bits": ["RCC_APB1ENR_UART5EN"]
   },
   "tim1": {
+      "type":"block",
       "address":"0x40010000",
       "size":"0x400",
       "memory_subregion_mask":"0",
@@ -702,6 +744,7 @@
       "enable_register_bits": ["RCC_APB2ENR_TIM1EN"]
   },
   "tim8": {
+      "type":"block",
       "address":"0x40010400",
       "size":"0x400",
       "memory_subregion_mask":"0",
@@ -717,6 +760,7 @@
       "enable_register_bits": ["RCC_APB2ENR_TIM8EN"]
   },
   "tim9": {
+      "type":"block",
       "address":"0x40014000",
       "size":"0x400",
       "memory_subregion_mask":"0",
@@ -732,6 +776,7 @@
       "enable_register_bits": ["RCC_APB2ENR_TIM9EN"]
   },
   "tim10": {
+      "type":"block",
       "address":"0x40014400",
       "size":"0x400",
       "memory_subregion_mask":"0",
@@ -747,6 +792,7 @@
       "enable_register_bits": ["RCC_APB2ENR_TIM10EN"]
   },
   "tim11": {
+      "type":"block",
       "address":"0x40014800",
       "size":"0x400",
       "memory_subregion_mask":"0",
@@ -762,6 +808,7 @@
       "enable_register_bits": ["RCC_APB2ENR_TIM11EN"]
   },
   "tim2": {
+      "type":"block",
       "address":"0x40000000",
       "size":"0x400",
       "memory_subregion_mask":"0",
@@ -777,6 +824,7 @@
       "enable_register_bits": ["RCC_APB1ENR_TIM2EN"]
   },
   "tim3": {
+      "type":"block",
       "address":"0x40000400",
       "size":"0x400",
       "memory_subregion_mask":"0",
@@ -792,6 +840,7 @@
       "enable_register_bits": ["RCC_APB1ENR_TIM3EN"]
   },
   "tim4": {
+      "type":"block",
       "address":"0x40000800",
       "size":"0x400",
       "memory_subregion_mask":"0",
@@ -807,6 +856,7 @@
       "enable_register_bits": ["RCC_APB1ENR_TIM4EN"]
   },
   "tim5": {
+      "type":"block",
       "address":"0x40000C00",
       "size":"0x400",
       "memory_subregion_mask":"0",
@@ -822,6 +872,7 @@
       "enable_register_bits": ["RCC_APB1ENR_TIM5EN"]
   },
   "tim6": {
+      "type":"block",
       "address":"0x40001000",
       "size":"0x400",
       "memory_subregion_mask":"0",
@@ -837,6 +888,7 @@
       "enable_register_bits": ["RCC_APB1ENR_TIM6EN"]
   },
   "tim7": {
+      "type":"block",
       "address":"0x40001400",
       "size":"0x400",
       "memory_subregion_mask":"0",
@@ -852,6 +904,7 @@
       "enable_register_bits": ["RCC_APB1ENR_TIM7EN"]
   },
   "tim12": {
+      "type":"block",
       "address":"0x40001800",
       "size":"0x400",
       "memory_subregion_mask":"0",
@@ -867,6 +920,7 @@
       "enable_register_bits": ["RCC_APB1ENR_TIM12EN"]
   },
   "tim13": {
+      "type":"block",
       "address":"0x40001C00",
       "size":"0x400",
       "memory_subregion_mask":"0",
@@ -882,6 +936,7 @@
       "enable_register_bits": ["RCC_APB1ENR_TIM13EN"]
   },
   "tim14": {
+      "type":"block",
       "address":"0x40002000",
       "size":"0x400",
       "memory_subregion_mask":"0",
@@ -897,6 +952,7 @@
       "enable_register_bits": ["RCC_APB1ENR_TIM14EN"]
   },
   "flash-ctrl": {
+      "type":"block",
       "address":"0x40023C00",
       "size":"0x400",
       "memory_subregion_mask":"0",
@@ -912,6 +968,7 @@
       "enable_register_bits": ["0"]
   },
   "flash-ctrl-2": {
+      "type":"block",
       "address":"0x40023C00",
       "size":"0x100",
       "memory_subregion_mask":"0",
@@ -928,6 +985,7 @@
   },
 
   "flash-system": {
+      "type":"block",
       "address":"0x1FFF0000",
       "size":"0x7800",
       "memory_subregion_mask":"0",
@@ -943,6 +1001,7 @@
       "enable_register_bits": ["0"]
   },
   "flash-otp": {
+      "type":"block",
       "address":"0x1FFF7800",
       "size":"0x400",
       "memory_subregion_mask":"0",
@@ -959,6 +1018,7 @@
   },
 
   "flash-optbytes-bank1": {
+      "type":"block",
       "address":"0x1FFFC000",
       "size":"0x20",
       "memory_subregion_mask":"0",
@@ -974,6 +1034,7 @@
       "enable_register_bits": ["0"]
   },
   "flash-optbytes-bank2": {
+      "type":"block",
       "address":"0x1FFEC000",
       "size":"0x20",
       "memory_subregion_mask":"0",
@@ -989,6 +1050,7 @@
       "enable_register_bits": ["0"]
   },
   "flash-flip-shr": {
+      "type":"block",
       "address":"0x08008000",
       "size":"0x8000",
       "memory_subregion_mask":"0",
@@ -1004,6 +1066,7 @@
       "enable_register_bits": ["0"]
   },
   "flash-flip": {
+      "type":"block",
       "address":"0x08000000",
       "size":"0x100000",
       "memory_subregion_mask":"0b00000001",
@@ -1019,6 +1082,7 @@
       "enable_register_bits": ["0"]
   },
   "flash-flop-shr": {
+      "type":"block",
       "address":"0x08108000",
       "size":"0x8000",
       "memory_subregion_mask":"0",
@@ -1034,6 +1098,7 @@
       "enable_register_bits": ["0"]
   },
   "flash-flop": {
+      "type":"block",
       "address":"0x08100000",
       "size":"0x100000",
       "memory_subregion_mask":"0b00000001",
@@ -1047,6 +1112,40 @@
       "permission": "PERM_RES_TSK_UPGRADE",
       "enable_register":"0",
       "enable_register_bits": ["0"]
+  },
+  "smartcard": {
+      "type":"peripheral",
+      "address":"0",
+      "size":"0",
+      "gpios": [
+        { "name":"SMARTCARD_CON", "port":"GPIO_PE", "pin":"2" },
+        { "name":"SMARTCARD_RST", "port":"GPIO_PE", "pin":"3" },
+        { "name":"SMARTCARD_VCC", "port":"GPIO_PD", "pin":"7" }
+      ]
+  },
+  "led0": {
+      "type":"peripheral",
+      "address":"0",
+      "size":"0",
+      "gpios": [
+        { "name":"SC_LED", "port":"GPIO_PC", "pin":"4" }
+      ]
+  },
+  "led1": {
+      "type":"peripheral",
+      "address":"0",
+      "size":"0",
+      "gpios": [
+        { "name":"SC_LED", "port":"GPIO_PC", "pin":"5" }
+      ]
+  },
+  "dfu_button": {
+      "type":"peripheral",
+      "address":"0",
+      "size":"0",
+      "gpios": [
+        { "name":"DFU_BTN", "port":"GPIO_PE", "pin":"4" }
+      ]
   }
 }
 
