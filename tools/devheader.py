@@ -147,6 +147,12 @@ def generate_c():
                     irqvals = dev["irqs_literal"];
                     devfile.write("#define %s %d\n" % (irq, irqvals[index]));
 
+            if 'gpios' in dev:
+                gpios = dev["gpios"];
+                devfile.write("/* naming indexes in structure gpios[] table */\n");
+                for index, gpio in enumerate(gpios):
+                    devfile.write("#define %s %d\n" % (gpio["name"], index));
+
             # global variable declaration
             devfile.write("\nstatic const struct user_driver_device_infos %s_dev_infos = {\n" % device);
             # device address
