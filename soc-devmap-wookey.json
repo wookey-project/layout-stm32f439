@@ -4,7 +4,10 @@
       "size":"0",
       "memory_subregion_mask":"0",
       "irqs": [
-          "0", 0, 0, 0
+        "0", 0, 0, 0
+      ],
+      "irqs_literal": [
+        0, 0, 0, 0
       ],
       "read_only": "true",
       "permission": "PERM_RES_DEV_DMA",
@@ -16,7 +19,10 @@
       "size":"0",
       "memory_subregion_mask":"0",
       "irqs": [
-          "DMA1_Stream0_IRQ", 0, 0, 0
+        "DMA1_Stream0_IRQ", 0, 0, 0
+      ],
+      "irqs_literal": [
+        27, 0, 0, 0
       ],
       "read_only": "true",
       "permission": "PERM_RES_DEV_DMA",
@@ -28,7 +34,10 @@
       "size":"0",
       "memory_subregion_mask":"0",
       "irqs": [
-          "DMA1_Stream1_IRQ", 0, 0, 0
+        "DMA1_Stream1_IRQ", 0, 0, 0
+      ],
+      "irqs_literal": [
+        28, 0, 0, 0
       ],
       "read_only": "true",
       "permission": "PERM_RES_DEV_DMA",
@@ -40,7 +49,10 @@
       "size":"0",
       "memory_subregion_mask":"0",
       "irqs": [
-          "DMA1_Stream2_IRQ", 0, 0, 0
+        "DMA1_Stream2_IRQ", 0, 0, 0
+      ],
+      "irqs_literal": [
+        29, 0, 0, 0
       ],
       "read_only": "true",
       "permission": "PERM_RES_DEV_DMA",
@@ -52,7 +64,10 @@
       "size":"0",
       "memory_subregion_mask":"0",
       "irqs": [
-          "DMA1_Stream3_IRQ", 0, 0, 0
+        "DMA1_Stream3_IRQ", 0, 0, 0
+      ],
+      "irqs_literal": [
+        30, 0, 0, 0
       ],
       "read_only": "true",
       "permission": "PERM_RES_DEV_DMA",
@@ -64,7 +79,10 @@
       "size":"0",
       "memory_subregion_mask":"0",
       "irqs": [
-          "DMA1_Stream4_IRQ", 0, 0, 0
+        "DMA1_Stream4_IRQ", 0, 0, 0
+      ],
+      "irqs_literal": [
+        31, 0, 0, 0
       ],
       "read_only": "true",
       "permission": "PERM_RES_DEV_DMA",
@@ -76,7 +94,10 @@
       "size":"0",
       "memory_subregion_mask":"0",
       "irqs": [
-          "DMA1_Stream5_IRQ", 0, 0, 0
+        "DMA1_Stream5_IRQ", 0, 0, 0
+      ],
+      "irqs_literal": [
+        32, 0, 0, 0
       ],
       "read_only": "true",
       "permission": "PERM_RES_DEV_DMA",
@@ -88,7 +109,10 @@
       "size":"0",
       "memory_subregion_mask":"0",
       "irqs": [
-          "DMA1_Stream6_IRQ", 0, 0, 0
+        "DMA1_Stream6_IRQ", 0, 0, 0
+      ],
+      "irqs_literal": [
+        33, 0, 0, 0
       ],
       "read_only": "true",
       "permission": "PERM_RES_DEV_DMA",
@@ -100,7 +124,10 @@
       "size":"0",
       "memory_subregion_mask":"0",
       "irqs": [
-          "DMA1_Stream7_IRQ", 0, 0, 0
+        "DMA1_Stream7_IRQ", 0, 0, 0
+      ],
+      "irqs_literal": [
+        63, 0, 0, 0
       ],
       "read_only": "true",
       "permission": "PERM_RES_DEV_DMA",
@@ -112,7 +139,10 @@
       "size":"0",
       "memory_subregion_mask":"0",
       "irqs": [
-          0, 0, 0, 0
+        0, 0, 0, 0
+      ],
+      "irqs_literal": [
+        0, 0, 0, 0
       ],
       "read_only": "true",
       "permission": "PERM_RES_DEV_DMA",
@@ -124,7 +154,10 @@
       "size":"0",
       "memory_subregion_mask":"0",
       "irqs": [
-          "DMA2_Stream0_IRQ", 0, 0, 0
+        "DMA2_Stream0_IRQ", 0, 0, 0
+      ],
+      "irqs_literal": [
+        72, 0, 0, 0
       ],
       "read_only": "true",
       "permission": "PERM_RES_DEV_DMA",
@@ -136,7 +169,10 @@
       "size":"0",
       "memory_subregion_mask":"0",
       "irqs": [
-          "DMA2_Stream1_IRQ", 0, 0, 0
+        "DMA2_Stream1_IRQ", 0, 0, 0
+      ],
+      "irqs_literal": [
+        73, 0, 0, 0
       ],
       "read_only": "true",
       "permission": "PERM_RES_DEV_DMA",
@@ -148,7 +184,10 @@
       "size":"0",
       "memory_subregion_mask":"0",
       "irqs": [
-          "DMA2_Stream2_IRQ", 0, 0, 0
+        "DMA2_Stream2_IRQ", 0, 0, 0
+      ],
+      "irqs_literal": [
+        74, 0, 0, 0
       ],
       "read_only": "true",
       "permission": "PERM_RES_DEV_DMA",
@@ -160,7 +199,10 @@
       "size":"0",
       "memory_subregion_mask":"0",
       "irqs": [
-          "DMA2_Stream3_IRQ", 0, 0, 0
+        "DMA2_Stream3_IRQ", 0, 0, 0
+      ],
+      "irqs_literal": [
+        75, 0, 0, 0
       ],
       "read_only": "true",
       "permission": "PERM_RES_DEV_DMA",
@@ -172,7 +214,10 @@
       "size":"0",
       "memory_subregion_mask":"0",
       "irqs": [
-          "DMA2_Stream4_IRQ", 0, 0, 0
+        "DMA2_Stream4_IRQ", 0, 0, 0
+      ],
+      "irqs_literal": [
+        76, 0, 0, 0
       ],
       "read_only": "true",
       "permission": "PERM_RES_DEV_DMA",
@@ -184,7 +229,10 @@
       "size":"0",
       "memory_subregion_mask":"0",
       "irqs": [
-          "DMA2_Stream5_IRQ", 0, 0, 0
+        "DMA2_Stream5_IRQ", 0, 0, 0
+      ],
+      "irqs_literal": [
+        84, 0, 0, 0
       ],
       "read_only": "true",
       "permission": "PERM_RES_DEV_DMA",
@@ -196,7 +244,10 @@
       "size":"0",
       "memory_subregion_mask":"0",
       "irqs": [
-          "DMA2_Stream6_IRQ", 0, 0, 0
+        "DMA2_Stream6_IRQ", 0, 0, 0
+      ],
+      "irqs_literal": [
+        85, 0, 0, 0
       ],
       "read_only": "true",
       "permission": "PERM_RES_DEV_DMA",
@@ -208,7 +259,10 @@
       "size":"0",
       "memory_subregion_mask":"0",
       "irqs": [
-          "DMA2_Stream7_IRQ", 0, 0, 0
+        "DMA2_Stream7_IRQ", 0, 0, 0
+      ],
+      "irqs_literal": [
+        86, 0, 0, 0
       ],
       "read_only": "true",
       "permission": "PERM_RES_DEV_DMA",
@@ -220,7 +274,10 @@
       "size":"0x800",
       "memory_subregion_mask":"0",
       "irqs": [
-          0, 0, 0, 0
+        0, 0, 0, 0
+      ],
+      "irqs_literal": [
+        0, 0, 0, 0
       ],
       "read_only": "false",
       "permission": "PERM_RES_DEV_CRYPTO_CFG",
@@ -232,7 +289,10 @@
       "size":"0x100",
       "memory_subregion_mask":"0b11100010",
       "irqs": [
-          "CRYP_IRQ", 0, 0, 0
+        "CRYP_IRQ", 0, 0, 0
+      ],
+      "irqs_literal": [
+        95, 0, 0, 0
       ],
       "read_only": "false",
       "permission": "PERM_RES_DEV_CRYPTO_USR",
@@ -244,7 +304,10 @@
       "size":"0x400",
       "memory_subregion_mask":"0",
       "irqs": [
-          "CRYP_IRQ", 0, 0, 0
+        "CRYP_IRQ", 0, 0, 0
+      ],
+      "irqs_literal": [
+        95, 0, 0, 0
       ],
       "read_only": "false",
       "permission": "PERM_RES_DEV_CRYPTO_USR",
@@ -256,7 +319,10 @@
       "size":"0x400",
       "memory_subregion_mask":"0",
       "irqs": [
-          "HASH_RNG_IRQ", 0, 0, 0
+        "HASH_RNG_IRQ", 0, 0, 0
+      ],
+      "irqs_literal": [
+        96, 0, 0, 0
       ],
       "read_only": "false",
       "permission": "PERM_RES_DEV_CRYPTO_USR",
@@ -268,7 +334,10 @@
       "size":"0x4000",
       "memory_subregion_mask":"0",
       "irqs": [
-          "OTG_FS_IRQ", 0, 0, 0
+        "OTG_FS_IRQ", "OTG_FS_WKUP_IRQ", 0, 0
+      ],
+      "irqs_literal": [
+        83, 58, 0, 0
       ],
       "read_only": "false",
       "permission": "PERM_RES_DEV_BUSES",
@@ -280,7 +349,10 @@
       "size":"0x4000",
       "memory_subregion_mask":"0",
       "irqs": [
-          "OTG_HS_IRQ", 0, 0, 0
+        "OTG_HS_IRQ", "OTG_HS_WKUP_IRQ", "OTG_HS_EP1_IN_IRQ", "OTG_HS_EP1_OUT_IRQ"
+      ],
+      "irqs_literal": [
+        93, 92, 91, 90
       ],
       "read_only": "false",
       "permission": "PERM_RES_DEV_BUSES",
@@ -295,7 +367,10 @@
       "size":"0x400",
       "memory_subregion_mask":"0",
       "irqs": [
-          "SDIO_IRQ", 0, 0, 0
+        "SDIO_IRQ", 0, 0, 0
+      ],
+      "irqs_literal": [
+        65, 0, 0, 0
       ],
       "read_only": "false",
       "permission": "PERM_RES_DEV_BUSES",
@@ -308,7 +383,10 @@
       "size":"0x1400",
       "memory_subregion_mask":"0",
       "irqs": [
-          "ETH_IRQ", 0, 0, 0
+        "ETH_IRQ", "ETH_WKUP_IRQ", 0, 0
+      ],
+      "irqs_literal": [
+        77, 78, 0, 0
       ],
       "read_only": "false",
       "permission": "PERM_RES_DEV_BUSES",
@@ -320,7 +398,10 @@
       "size":"0x400",
       "memory_subregion_mask":"0",
       "irqs": [
-          0, 0, 0, 0
+        0, 0, 0, 0
+      ],
+      "irqs_literal": [
+        0, 0, 0, 0
       ],
       "read_only": "false",
       "permission": "PERM_RES_DEV_CRYPTO_USR",
@@ -332,7 +413,10 @@
       "size":"0x400",
       "memory_subregion_mask":"0",
       "irqs": [
-          "SPI1_IRQ", 0, 0, 0
+        "SPI1_IRQ", 0, 0, 0
+      ],
+      "irqs_literal": [
+        51, 0, 0, 0
       ],
       "read_only": "false",
       "permission": "PERM_RES_DEV_BUSES",
@@ -344,7 +428,10 @@
       "size":"0x400",
       "memory_subregion_mask":"0",
       "irqs": [
-          "SPI2_IRQ", 0, 0, 0
+        "SPI2_IRQ", 0, 0, 0
+      ],
+      "irqs_literal": [
+        52, 0, 0, 0
       ],
       "read_only": "false",
       "permission": "PERM_RES_DEV_BUSES",
@@ -356,7 +443,10 @@
       "size":"0x400",
       "memory_subregion_mask":"0",
       "irqs": [
-          "SPI3_IRQ", 0, 0, 0
+        "SPI3_IRQ", 0, 0, 0
+      ],
+      "irqs_literal": [
+        67, 0, 0, 0
       ],
       "read_only": "false",
       "permission": "PERM_RES_DEV_BUSES",
@@ -368,7 +458,10 @@
       "size":"0x400",
       "memory_subregion_mask":"0",
       "irqs": [
-          "I2C1_EV_IRQ", 0, 0, 0
+        "I2C1_EV_IRQ", "I2C1_ER_IRQ", 0, 0
+      ],
+      "irqs_literal": [
+        47, 48, 0, 0
       ],
       "read_only": "false",
       "permission": "PERM_RES_DEV_BUSES",
@@ -380,7 +473,10 @@
       "size":"0x400",
       "memory_subregion_mask":"0",
       "irqs": [
-          "I2C2_EV_IRQ", 0, 0, 0
+        "I2C2_EV_IRQ", "I2C2_ER_IRQ", 0, 0
+      ],
+      "irqs_literal": [
+        49, 50, 0, 0
       ],
       "read_only": "false",
       "permission": "PERM_RES_DEV_BUSES",
@@ -392,7 +488,10 @@
       "size":"0x400",
       "memory_subregion_mask":"0",
       "irqs": [
-          "I2C3_EV_IRQ", 0, 0, 0
+        "I2C3_EV_IRQ", "I2C3_ER_IRQ", 0, 0
+      ],
+      "irqs_literal": [
+        88, 89, 0, 0
       ],
       "read_only": "false",
       "permission": "PERM_RES_DEV_BUSES",
@@ -404,7 +503,10 @@
       "size":"0x400",
       "memory_subregion_mask":"0",
       "irqs": [
-          0, 0, 0, 0
+        "CAN1_TX_IRQ", "CAN1_RX0_IRQ", "CAN1_RX1_IRQ", "CAN1_SCE_IRQ"
+      ],
+      "irqs_literal": [
+        35, 36, 37, 38
       ],
       "read_only": "false",
       "permission": "PERM_RES_DEV_BUSES",
@@ -416,7 +518,10 @@
       "size":"0x400",
       "memory_subregion_mask":"0",
       "irqs": [
-          0, 0, 0, 0
+        "CAN2_TX_IRQ", "CAN2_RX0_IRQ", "CAN2_RX1_IRQ", "CAN2_SCE_IRQ"
+      ],
+      "irqs_literal": [
+        79, 80, 81, 82
       ],
       "read_only": "false",
       "permission": "PERM_RES_DEV_BUSES",
@@ -428,15 +533,18 @@
       "size":"0x400",
       "memory_subregion_mask":"0",
       "irqs": [
-          "USART1_IRQ", 0, 0, 0
+        "USART1_IRQ", 0, 0, 0
+      ],
+      "irqs_literal": [
+        53, 0, 0, 0
       ],
       "read_only": "false",
       "permission": "PERM_RES_DEV_BUSES",
       "enable_register":"r_CORTEX_M_RCC_APB2ENR",
       "enable_register_bits": ["RCC_APB2ENR_USART1EN"],
       "gpios": [
-          { "port":"GPIO_PA", "pin":"9" },
-          { "port":"GPIO_PA", "pin":"8" }
+        { "port":"GPIO_PA", "pin":"9" },
+        { "port":"GPIO_PA", "pin":"8" }
       ]
   },
   "usart6": {
@@ -444,15 +552,18 @@
       "size":"0x400",
       "memory_subregion_mask":"0",
       "irqs": [
-          "USART6_IRQ", 0, 0, 0
+        "USART6_IRQ", 0, 0, 0
+      ],
+      "irqs_literal": [
+        87, 0, 0, 0
       ],
       "read_only": "false",
       "permission": "PERM_RES_DEV_BUSES",
       "enable_register":"r_CORTEX_M_RCC_APB2ENR",
       "enable_register_bits": ["RCC_APB2ENR_USART6EN"],
       "gpios": [
-          { "port":"GPIO_PC", "pin":"6" },
-          { "port":"GPIO_PC", "pin":"7" }
+        { "port":"GPIO_PC", "pin":"6" },
+        { "port":"GPIO_PC", "pin":"7" }
       ]
   },
   "usart2": {
@@ -460,7 +571,10 @@
       "size":"0x400",
       "memory_subregion_mask":"0",
       "irqs": [
-          "USART2_IRQ", 0, 0, 0
+        "USART2_IRQ", 0, 0, 0
+      ],
+      "irqs_literal": [
+          54, 0, 0, 0
       ],
       "read_only": "false",
       "permission": "PERM_RES_DEV_BUSES",
@@ -472,7 +586,10 @@
       "size":"0x400",
       "memory_subregion_mask":"0",
       "irqs": [
-          "USART3_IRQ", 0, 0, 0
+        "USART3_IRQ", 0, 0, 0
+      ],
+      "irqs_literal": [
+        55, 0, 0, 0
       ],
       "read_only": "false",
       "permission": "PERM_RES_DEV_BUSES",
@@ -484,7 +601,10 @@
       "size":"0x400",
       "memory_subregion_mask":"0",
       "irqs": [
-          "UART4_IRQ", 0, 0, 0
+        "UART4_IRQ", 0, 0, 0
+      ],
+      "irqs_literal": [
+        68, 0, 0, 0
       ],
       "read_only": "false",
       "permission": "PERM_RES_DEV_BUSES",
@@ -496,7 +616,10 @@
       "size":"0x400",
       "memory_subregion_mask":"0",
       "irqs": [
-          "UART5_IRQ", 0, 0, 0
+        "UART5_IRQ", 0, 0, 0
+      ],
+      "irqs_literal": [
+        69, 0, 0, 0
       ],
       "read_only": "false",
       "permission": "PERM_RES_DEV_BUSES",
@@ -510,6 +633,9 @@
       "irqs": [
         "TIM1_BRK_TIM9_IRQ", "TIM1_UP_TIM10_IRQ", "TIM1_TRG_COM_TIM11_IRQ", "TIM1_CC_IRQ"
       ],
+      "irqs_literal": [
+        40, 41, 42, 43
+      ],
       "read_only": "false",
       "permission": "PERM_RES_DEV_TIM",
       "enable_register":"r_CORTEX_M_RCC_APB2ENR",
@@ -521,6 +647,9 @@
       "memory_subregion_mask":"0",
       "irqs": [
         "TIM8_BRK_TIM12_IRQ", "TIM8_UP_TIM13_IRQ", "TIM8_TRG_COM_TIM14_IRQ", "TIM8_CC_IRQ"
+      ],
+      "irqs_literal": [
+        59, 60, 61, 62
       ],
       "read_only": "false",
       "permission": "PERM_RES_DEV_TIM",
@@ -534,6 +663,9 @@
       "irqs": [
         "TIM1_BRK_TIM9_IRQ", 0, 0, 0
       ],
+      "irqs_literal": [
+        40, 0, 0, 0
+      ],
       "read_only": "false",
       "permission": "PERM_RES_DEV_TIM",
       "enable_register":"r_CORTEX_M_RCC_APB2ENR",
@@ -545,6 +677,9 @@
       "memory_subregion_mask":"0",
       "irqs": [
         "TIM1_UP_TIM10_IRQ", 0, 0, 0
+      ],
+      "irqs_literal": [
+        41, 0, 0, 0
       ],
       "read_only": "false",
       "permission": "PERM_RES_DEV_TIM",
@@ -558,6 +693,9 @@
       "irqs": [
         "TIM1_TRG_COM_TIM11_IRQ", 0, 0, 0
       ],
+      "irqs_literal": [
+        42, 0, 0, 0
+      ],
       "read_only": "false",
       "permission": "PERM_RES_DEV_TIM",
       "enable_register":"r_CORTEX_M_RCC_APB2ENR",
@@ -569,6 +707,9 @@
       "memory_subregion_mask":"0",
       "irqs": [
         "TIM2_IRQ", 0, 0, 0
+      ],
+      "irqs_literal": [
+        44, 0, 0, 0
       ],
       "read_only": "false",
       "permission": "PERM_RES_DEV_TIM",
@@ -582,6 +723,9 @@
       "irqs": [
         "TIM3_IRQ", 0, 0, 0
       ],
+      "irqs_literal": [
+        45, 0, 0, 0
+      ],
       "read_only": "false",
       "permission": "PERM_RES_DEV_TIM",
       "enable_register":"r_CORTEX_M_RCC_APB1ENR",
@@ -593,6 +737,9 @@
       "memory_subregion_mask":"0",
       "irqs": [
         "TIM4_IRQ", 0, 0, 0
+      ],
+      "irqs_literal": [
+        46, 0, 0, 0
       ],
       "read_only": "false",
       "permission": "PERM_RES_DEV_TIM",
@@ -606,6 +753,9 @@
       "irqs": [
         "TIM5_IRQ", 0, 0, 0
       ],
+      "irqs_literal": [
+        66, 0, 0, 0
+      ],
       "read_only": "false",
       "permission": "PERM_RES_DEV_TIM",
       "enable_register":"r_CORTEX_M_RCC_APB1ENR",
@@ -617,6 +767,9 @@
       "memory_subregion_mask":"0",
       "irqs": [
         "TIM6_DAC_IRQ", 0, 0, 0
+      ],
+      "irqs_literal": [
+        70, 0, 0, 0
       ],
       "read_only": "false",
       "permission": "PERM_RES_DEV_TIM",
@@ -630,6 +783,9 @@
       "irqs": [
         "TIM7_IRQ", 0, 0, 0
       ],
+      "irqs_literal": [
+        71, 0, 0, 0
+      ],
       "read_only": "false",
       "permission": "PERM_RES_DEV_TIM",
       "enable_register":"r_CORTEX_M_RCC_APB1ENR",
@@ -641,6 +797,9 @@
       "memory_subregion_mask":"0",
       "irqs": [
         "TIM8_BRK_TIM12_IRQ", 0, 0, 0
+      ],
+      "irqs_literal": [
+        59, 0, 0, 0
       ],
       "read_only": "false",
       "permission": "PERM_RES_DEV_TIM",
@@ -654,6 +813,9 @@
       "irqs": [
         "TIM8_UP_TIM13_IRQ", 0, 0, 0
       ],
+      "irqs_literal": [
+        60, 0, 0, 0
+      ],
       "read_only": "false",
       "permission": "PERM_RES_DEV_TIM",
       "enable_register":"r_CORTEX_M_RCC_APB1ENR",
@@ -665,6 +827,9 @@
       "memory_subregion_mask":"0",
       "irqs": [
         "TIM8_TRG_COM_TIM14_IRQ", 0, 0, 0
+      ],
+      "irqs_literal": [
+        61, 0, 0, 0
       ],
       "read_only": "false",
       "permission": "PERM_RES_DEV_TIM",
@@ -678,6 +843,9 @@
       "irqs": [
         "FLASH_IRQ", 0, 0, 0
       ],
+      "irqs_literal": [
+        20, 0, 0, 0
+      ],
       "read_only": "false",
       "permission": "PERM_RES_TSK_UPGRADE",
       "enable_register":"0",
@@ -690,6 +858,9 @@
       "irqs": [
         "FLASH_IRQ", 0, 0, 0
       ],
+      "irqs_literal": [
+        20, 0, 0, 0
+      ],
       "read_only": "false",
       "permission": "PERM_RES_TSK_UPGRADE",
       "enable_register":"0",
@@ -701,7 +872,10 @@
       "size":"0x7800",
       "memory_subregion_mask":"0",
       "irqs": [
-        "FLASH_IRQ", 0, 0, 0
+        0, 0, 0, 0
+      ],
+      "irqs_literal": [
+        0, 0, 0, 0
       ],
       "read_only": "true",
       "permission": "PERM_RES_TSK_UPGRADE",
@@ -713,7 +887,10 @@
       "size":"0x400",
       "memory_subregion_mask":"0",
       "irqs": [
-        "FLASH_IRQ", 0, 0, 0
+        0, 0, 0, 0
+      ],
+      "irqs_literal": [
+        0, 0, 0, 0
       ],
       "read_only": "false",
       "permission": "PERM_RES_TSK_UPGRADE",
@@ -728,6 +905,9 @@
       "irqs": [
         0, 0, 0, 0
       ],
+      "irqs_literal": [
+        0, 0, 0, 0
+      ],
       "read_only": "false",
       "permission": "PERM_RES_TSK_UPGRADE",
       "enable_register":"0",
@@ -738,6 +918,9 @@
       "size":"0x20",
       "memory_subregion_mask":"0",
       "irqs": [
+        0, 0, 0, 0
+      ],
+      "irqs_literal": [
         0, 0, 0, 0
       ],
       "read_only": "false",
@@ -752,6 +935,9 @@
       "irqs": [
         0, 0, 0, 0
       ],
+      "irqs_literal": [
+        0, 0, 0, 0
+      ],
       "read_only": "false",
       "permission": "PERM_RES_TSK_UPGRADE",
       "enable_register":"0",
@@ -762,6 +948,9 @@
       "size":"0x100000",
       "memory_subregion_mask":"0b00000001",
       "irqs": [
+        0, 0, 0, 0
+      ],
+      "irqs_literal": [
         0, 0, 0, 0
       ],
       "read_only": "false",
@@ -776,6 +965,9 @@
       "irqs": [
         0, 0, 0, 0
       ],
+      "irqs_literal": [
+        0, 0, 0, 0
+      ],
       "read_only": "false",
       "permission": "PERM_RES_TSK_UPGRADE",
       "enable_register":"0",
@@ -788,12 +980,13 @@
       "irqs": [
         0, 0, 0, 0
       ],
+      "irqs_literal": [
+        0, 0, 0, 0
+      ],
       "read_only": "false",
       "permission": "PERM_RES_TSK_UPGRADE",
       "enable_register":"0",
       "enable_register_bits": ["0"]
   }
 }
-
-
 

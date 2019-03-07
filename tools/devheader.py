@@ -34,8 +34,7 @@ filename = sys.argv[2];
 ########################################################
 
 # print type:
-c_header = """
-/*
+c_header = """/*
  *
  * Copyright 2018 The wookey project team <wookey@ssi.gouv.fr>
  *   - Ryad     Benadjila
@@ -65,6 +64,7 @@ c_header = """
 c_definition = """
 
 #include "api/types.h"
+#include "api/syscall.h"
 
 
 /*
@@ -99,16 +99,6 @@ struct user_driver_device_infos {
 };
 
 
-/**
-**
-** This structure define all available devices and associated informations. This
-** informations are separated in two parts:
-**   - physical information (IRQ lines, RCC references, physical address and size...)
-**   - security information (required permissions, usage restriction (RO mapping, etc.)
-**
-** This structure is used in remplacement of a full device tree for simplicity in small
-** embedded systems.
-*/
 """;
 
 
@@ -126,6 +116,15 @@ with open(filename, "r") as jsonfile:
 
 
 def generate_c():
+
+    # structure definition
+    with open(os.path.join(outdir, 'devinfo.h'), "w") as devinfofile:
+            devinfofile.write(c_header);
+            devinfofile.write("#ifndef DEVINFO_H_\n");
+            devinfofile.write("# define DEVINFO_H_\n");
+            devinfofile.write(c_definition);
+            devinfofile.write("#endif/*!DEVINFO_H_*/\n");
+
     for device in data:
         dev = data[device];
         if dev["size"] == "0":
@@ -134,22 +133,34 @@ def generate_c():
         devfilename = device + ".h";
         devheadername = device.upper() + "_H_";
         with open(os.path.join(outdir, devfilename), "w") as devfile:
+            # header (license)
             devfile.write(c_header);
+            # preprocessing and inclusion
             devfile.write("#ifndef %s\n" % devheadername);
             devfile.write("# define %s\n" % devheadername);
-            devfile.write(c_definition);
-            devfile.write("static const struct user_driver_device_infos %s_dev_infos = {\n" % device);
+            devfile.write("\n#include \"generated/devinfo.h\"\n\n");
+
+            # generating defines for IRQ values
+            irqs = dev["irqs"];
+            for index, irq in enumerate(irqs):
+                if irq != 0:
+                    irqvals = dev["irqs_literal"];
+                    devfile.write("#define %s %d\n" % (irq, irqvals[index]));
+
+            # global variable declaration
+            devfile.write("\nstatic const struct user_driver_device_infos %s_dev_infos = {\n" % device);
             # device address
             devfile.write("    .address = %s,\n" % dev["address"]);
             # device size
             devfile.write("    .size    = %s,\n" % dev["size"]);
-            # device irq
+            # device irqs
             irqs = dev["irqs"];
             devfile.write("    .irqs[] = { ");
             devfile.write("    %s" % irqs[0]);
             for irq in irqs[1:]:
                 devfile.write(", %s" % irq);
             devfile.write(" },\n");
+            # device gpios
             devfile.write("    .gpios[] = {\n");
             if 'gpios' in dev:
                 gpios = dev["gpios"];
@@ -165,6 +176,8 @@ def generate_c():
             devfile.write("    }\n");
             devfile.write("};\n");
 
+            # closing preprocessing
             devfile.write(c_footer);
+
 
 generate_c();
