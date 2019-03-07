@@ -420,9 +420,9 @@
       ],
       "gpios": [
         { "name":"SPI1_CS", "port":"GPIO_PC", "pin":"6" },
-        { "name":"SPI1_MISO", "port":"GPIO_PB", "pin":"3" },
-        { "name":"SPI1_MOSI", "port":"GPIO_PA", "pin":"6" },
-        { "name":"SPI1_CLK", "port":"GPIO_PA", "pin":"7" }
+        { "name":"SPI1_CK", "port":"GPIO_PB", "pin":"3" },
+        { "name":"SPI1_MISO", "port":"GPIO_PA", "pin":"6" },
+        { "name":"SPI1_MOSI", "port":"GPIO_PA", "pin":"7" }
       ],
       "read_only": "false",
       "permission": "PERM_RES_DEV_BUSES",
@@ -588,7 +588,7 @@
       ],
       "gpios": [
         { "name":"USART2_TX", "port":"GPIO_PA", "pin":"2" },
-        { "name":"USART2_CK", "port":"GPIO_PA", "pin":"3" },
+        { "name":"USART2_RX", "port":"GPIO_PA", "pin":"3" },
         { "name":"USART2_SC_TX", "port":"GPIO_PA", "pin":"2" },
         { "name":"USART2_SC_CK", "port":"GPIO_PA", "pin":"4" }
       ],
@@ -609,7 +609,7 @@
       ],
       "gpios": [
         { "name":"USART3_TX", "port":"GPIO_PB", "pin":"10" },
-        { "name":"USART3_CK", "port":"GPIO_PB", "pin":"11" },
+        { "name":"USART3_RX", "port":"GPIO_PB", "pin":"11" },
         { "name":"USART3_SC_TX", "port":"GPIO_PB", "pin":"10" },
         { "name":"USART3_SC_CK", "port":"GPIO_PB", "pin":"12" }
       ],
@@ -630,7 +630,7 @@
       ],
       "gpios": [
         { "name":"UART4_TX", "port":"GPIO_PA", "pin":"0" },
-        { "name":"UART4_CK", "port":"GPIO_PA", "pin":"1" }
+        { "name":"UART4_RX", "port":"GPIO_PA", "pin":"1" }
       ],
       "read_only": "false",
       "permission": "PERM_RES_DEV_BUSES",
@@ -649,7 +649,7 @@
       ],
       "gpios": [
         { "name":"UART5_TX", "port":"GPIO_PC", "pin":"12" },
-        { "name":"UART5_CK", "port":"GPIO_PC", "pin":"2" }
+        { "name":"UART5_RX", "port":"GPIO_PC", "pin":"2" }
       ],
       "read_only": "false",
       "permission": "PERM_RES_DEV_BUSES",
