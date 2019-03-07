@@ -91,9 +91,9 @@ struct user_driver_device_gpio_infos {
 };
 
 struct user_driver_device_infos {
-    physaddr_t addr;       /**< Device MMIO base address */
+    physaddr_t address;    /**< Device MMIO base address */
     uint32_t   size;       /**< Device MMIO mapping size */
-    uint8_t    irq[4];     /**< IRQ line, when exist, or 0, max 4 irq lines per device */
+    uint8_t    irqs[4];     /**< IRQ line, when exist, or 0, max 4 irq lines per device */
     /** GPIO informations of the device (pin, port) */
     struct user_driver_device_gpio_infos gpios[4];
 };
@@ -148,20 +148,20 @@ def generate_c():
                     devfile.write("#define %s %d\n" % (irq, irqvals[index]));
 
             # global variable declaration
-            devfile.write("\nstatic const struct user_driver_device_infos %s_dev_infos = {\n" % device);
+            devfile.write("\nstatic const struct user_driver_device_infos %s_dev_infos = {\n" % device);
             # device address
             devfile.write("    .address = %s,\n" % dev["address"]);
             # device size
             devfile.write("    .size    = %s,\n" % dev["size"]);
             # device irqs
             irqs = dev["irqs"];
-            devfile.write("    .irqs[] = { ");
+            devfile.write("    .irqs = { ");
             devfile.write("    %s" % irqs[0]);
             for irq in irqs[1:]:
                 devfile.write(", %s" % irq);
             devfile.write(" },\n");
             # device gpios
-            devfile.write("    .gpios[] = {\n");
+            devfile.write("    .gpios = {\n");
             if 'gpios' in dev:
                 gpios = dev["gpios"];
                 for gpio in gpios[0:]:
