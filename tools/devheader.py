@@ -129,11 +129,12 @@ def generate_c():
 
     for device in data:
         dev = data[device];
+        device_c_name = device.replace("-", "_");
         if dev["size"] == "0" and dev["type"] == "block":
             # we do not generate headers for unmappable block device (e.g. DMA)
             continue;
-        devfilename = device + ".h";
-        devheadername = device.upper() + "_H_";
+        devfilename = device_c_name + ".h";
+        devheadername = device_c_name.upper() + "_H_";
 
         with open(os.path.join(outdir, devfilename), "w") as devfile:
             # header (license)
@@ -158,7 +159,7 @@ def generate_c():
                     devfile.write("#define %s %d\n" % (gpio["name"], index));
 
             # global variable declaration
-            devfile.write("\nstatic const struct user_driver_device_infos %s_dev_infos = {\n" % device);
+            devfile.write("\nstatic const struct user_driver_device_infos %s_dev_infos = {\n" % device_c_name);
             # device address
             devfile.write("    .address = %s,\n" % dev["address"]);
             # device size
