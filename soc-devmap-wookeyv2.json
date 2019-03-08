@@ -1158,6 +1158,17 @@
         { "name":"RFID_TX", "port":"GPIO_PD", "pin":"8" },
         { "name":"RFID_RX", "port":"GPIO_PD", "pin":"9" }
       ]
+  },
+  "ili9341": {
+      "type":"peripheral",
+      "address":"0",
+      "size":"0",
+      "gpios": [
+        { "name":"TFT_CX",  "port":"GPIO_PD", "pin":"14" },
+        { "name":"TFT_RST", "port":"GPIO_PD", "pin":"15" },
+        { "name":"TFT_NSS", "port":"GPIO_PC", "pin":"6" }
+      ]
   }
+
 }
 

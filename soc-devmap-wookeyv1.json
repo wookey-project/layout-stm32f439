@@ -1146,6 +1146,17 @@
       "gpios": [
         { "name":"DFU_BTN", "port":"GPIO_PE", "pin":"4" }
       ]
+  },
+
+  "ili9341": {
+      "type":"peripheral",
+      "address":"0",
+      "size":"0",
+      "gpios": [
+        { "name":"TFT_CX",  "port":"GPIO_PD", "pin":"14" },
+        { "name":"TFT_RST", "port":"GPIO_PD", "pin":"15" },
+        { "name":"TFT_NSS", "port":"GPIO_PC", "pin":"6" }
+      ]
   }
 }
 
