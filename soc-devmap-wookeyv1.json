@@ -424,7 +424,7 @@
         { "name":"SDIO_D1", "port":"GPIO_PC", "pin":"9" },
         { "name":"SDIO_D2", "port":"GPIO_PC", "pin":"10" },
         { "name":"SDIO_D3", "port":"GPIO_PC", "pin":"11" },
-        { "name":"SDIO_CMD", "port":"GPIO_PD", "pin":"12" },
+        { "name":"SDIO_CMD", "port":"GPIO_PD", "pin":"2" },
         { "name":"SDIO_RMV", "port":"GPIO_PC", "pin":"7" }
       ],
       "read_only": "false",
