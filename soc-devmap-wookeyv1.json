@@ -1128,7 +1128,7 @@
       "address":"0",
       "size":"0",
       "gpios": [
-        { "name":"SC_LED", "port":"GPIO_PC", "pin":"4" }
+        { "name":"LED0", "port":"GPIO_PC", "pin":"4" }
       ]
   },
   "led1": {
@@ -1136,7 +1136,7 @@
       "address":"0",
       "size":"0",
       "gpios": [
-        { "name":"SC_LED", "port":"GPIO_PC", "pin":"5" }
+        { "name":"LED1", "port":"GPIO_PC", "pin":"5" }
       ]
   },
   "dfu_button": {
