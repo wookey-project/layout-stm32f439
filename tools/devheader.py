@@ -93,7 +93,6 @@ struct user_driver_device_gpio_infos {
 struct user_driver_device_infos {
     physaddr_t address;    /**< Device MMIO base address */
     uint32_t   size;       /**< Device MMIO mapping size */
-    uint8_t    irqs[4];     /**< IRQ line, when exist, or 0, max 4 irq lines per device */
     /** GPIO informations of the device (pin, port) */
     struct user_driver_device_gpio_infos gpios[14];
 };
@@ -146,11 +145,11 @@ def generate_c():
 
             if dev["type"] == "block":
                 # generating defines for IRQ values
-                irqs = dev["irqs"];
-                for index, irq in enumerate(irqs):
-                    if irq != 0:
-                        irqvals = dev["irqs_literal"];
-                        devfile.write("#define %s %d\n" % (irq, irqvals[index]));
+                if 'irqs' in dev:
+                    irqs = dev["irqs"];
+                    for irq in irqs:
+                        if irq["value"] != 0:
+                            devfile.write("#define %s %s\n" % (irq["name"], irq["value"]));
 
             if 'gpios' in dev:
                 gpios = dev["gpios"];
@@ -164,16 +163,6 @@ def generate_c():
             devfile.write("    .address = %s,\n" % dev["address"]);
             # device size
             devfile.write("    .size    = %s,\n" % dev["size"]);
-            # device irqs
-            if 'irqs' in dev:
-                irqs = dev["irqs"];
-                devfile.write("    .irqs = { ");
-                devfile.write("%s" % irqs[0]);
-                for irq in irqs[1:]:
-                    devfile.write(", %s" % irq);
-                devfile.write(" },\n");
-            else:
-                devfile.write("    .irqs = { 0, 0, 0, 0 },\n");
 
             # device gpios
             devfile.write("    .gpios = {\n");
