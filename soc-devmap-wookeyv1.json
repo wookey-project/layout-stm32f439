@@ -1197,6 +1197,7 @@
       "size":"0",
       "gpios": [
         { "name":"TOUCH_NSS",  "port":"GPIO_PD", "pin":"10" },
+        { "name":"TOUCH_BUSY", "port":"GPIO_PD", "pin":"11" },
         { "name":"TOUCH_EXTI", "port":"GPIO_PD", "pin":"12" }
       ]
   }
