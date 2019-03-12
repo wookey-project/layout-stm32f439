@@ -49,3 +49,15 @@ You can add as many devices as you wish. You can add delete unwanted devices if 
 
 The devices mapping generates the kernel/generated/devmap.h header file.
 
+## About JSON Schema validation
+
+The JSON dictionary used here is associated to a dedicated JSON schema named 'soc-devmap.schema.json.
+The conformity of the JSON file to the JSON schema can be verified using any JSON schema validation tool.
+
+A typical check could be, using python3-jsonschema package :
+
+```
+   jsonschema -i soc-devmap-wookeyv1.json soc-devmap.schema.json
+```
+
+If you which to add some new peripherals, don't hesitate to validate the updated JSON file against the JSON Schema to avoid invalid JSON syntax that may generate invalid header files.

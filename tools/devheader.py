@@ -127,9 +127,9 @@ def generate_c():
             devinfofile.write("#endif/*!DEVINFO_H_*/\n");
 
     for device in data:
-        dev = data[device];
-        device_c_name = device.replace("-", "_");
-        if dev["size"] == "0" and dev["type"] == "block":
+        dev = device["name"];
+        device_c_name = dev.replace("-", "_");
+        if device["size"] == "0" and device["type"] == "block":
             # we do not generate headers for unmappable block device (e.g. DMA)
             continue;
         devfilename = device_c_name + ".h";
@@ -143,16 +143,16 @@ def generate_c():
             devfile.write("# define %s\n" % devheadername);
             devfile.write("\n#include \"generated/devinfo.h\"\n\n");
 
-            if dev["type"] == "block":
+            if device["type"] == "block":
                 # generating defines for IRQ values
-                if 'irqs' in dev:
-                    irqs = dev["irqs"];
+                if 'irqs' in device:
+                    irqs = device["irqs"];
                     for irq in irqs:
                         if irq["value"] != 0:
                             devfile.write("#define %s %s\n" % (irq["name"], irq["value"]));
 
-            if 'gpios' in dev:
-                gpios = dev["gpios"];
+            if 'gpios' in device:
+                gpios = device["gpios"];
                 devfile.write("/* naming indexes in structure gpios[] table */\n");
                 for index, gpio in enumerate(gpios):
                     devfile.write("#define %s %d\n" % (gpio["name"], index));
@@ -160,14 +160,14 @@ def generate_c():
             # global variable declaration
             devfile.write("\nstatic const struct user_driver_device_infos %s_dev_infos = {\n" % device_c_name);
             # device address
-            devfile.write("    .address = %s,\n" % dev["address"]);
+            devfile.write("    .address = %s,\n" % device["address"]);
             # device size
-            devfile.write("    .size    = %s,\n" % dev["size"]);
+            devfile.write("    .size    = %s,\n" % device["size"]);
 
             # device gpios
             devfile.write("    .gpios = {\n");
-            if 'gpios' in dev:
-                gpios = dev["gpios"];
+            if 'gpios' in device:
+                gpios = device["gpios"];
                 for gpio in gpios[0:]:
                     devfile.write("      { %s, %s },\n" % (gpio["port"], gpio["pin"]));
                 if len(gpios) < max_gpio_num:
