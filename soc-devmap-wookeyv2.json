@@ -377,7 +377,6 @@
       "enable_register":"r_CORTEX_M_RCC_APB2ENR",
       "enable_register_bits": ["RCC_APB2ENR_SDIOEN"]
   },
-
   {
       "name":"eth-mac",
       "type":"block",
@@ -1026,7 +1025,7 @@
       "gpios": [
         { "name":"TFT_CX",  "port":"GPIO_PD", "pin":"14" },
         { "name":"TFT_RST", "port":"GPIO_PD", "pin":"15" },
-        { "name":"TFT_NSS", "port":"GPIO_PC", "pin":"6" }
+        { "name":"TFT_NSS", "port":"GPIO_PA", "pin":"10" }
       ]
   },
   {
@@ -1036,6 +1035,7 @@
       "size":"0",
       "gpios": [
         { "name":"TOUCH_NSS",  "port":"GPIO_PD", "pin":"10" },
+        { "name":"TOUCH_BUSY", "port":"GPIO_PD", "pin":"11" },
         { "name":"TOUCH_EXTI", "port":"GPIO_PD", "pin":"12" }
       ]
   }
