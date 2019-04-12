@@ -1,6 +1,6 @@
 #include "autoconf.h"
 
-#include <kernel/src/arch/socs/stm32f439/soc-layout.h>
+#include <kernel/src/arch/socs/stm32f439/C/soc-layout.h>
 
 
 _Max_App_Size = FW_MAX_USER_SIZE; /* maximum size for total app .text+rodata */
