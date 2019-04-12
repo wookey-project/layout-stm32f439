@@ -95,7 +95,6 @@
       "enable_register_bits": ["RCC_AHB1ENR_DMA1EN"]
   },
   {
-      "name":"device",
       "name":"dma1-str6",
       "type":"block",
       "address":"0x400260a0",
@@ -177,7 +176,6 @@
       "enable_register_bits": ["RCC_AHB1ENR_DMA2EN"]
   },
   {
-      "name":"device",
       "name":"dma2-str3",
       "type":"block",
       "address":"0x40026458",
@@ -1027,6 +1025,5 @@
         { "name":"TOUCH_EXTI", "port":"GPIO_PD", "pin":"12" }
       ]
   }
-
 ]
 
