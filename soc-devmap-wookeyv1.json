@@ -1016,6 +1016,17 @@
         { "name":"TFT_RST", "port":"GPIO_PD", "pin":"15" },
         { "name":"TFT_NSS", "port":"GPIO_PC", "pin":"6" }
       ]
+  },
+  {
+      "name":"ad7843",
+      "type":"periperal",
+      "address":"0",
+      "size":"0",
+      "gpios": [
+        { "name":"TOUCH_NSS",  "port":"GPIO_PD", "pin":"10" },
+        { "name":"TOUCH_EXTI", "port":"GPIO_PD", "pin":"12" }
+      ]
   }
+
 ]
 
