@@ -90,6 +90,11 @@ struct user_driver_device_gpio_infos {
     uint8_t    pin;
 };
 
+struct user_driver_device_dma_infos {
+    uint8_t    channel;
+    uint8_t    stream;
+};
+
 struct user_driver_device_infos {
     physaddr_t address;    /**< Device MMIO base address */
     uint32_t   size;       /**< Device MMIO mapping size */
@@ -156,6 +161,14 @@ def generate_c():
                 devfile.write("/* naming indexes in structure gpios[] table */\n");
                 for index, gpio in enumerate(gpios):
                     devfile.write("#define %s %d\n" % (gpio["name"], index));
+
+            if 'dmas' in device:
+                dmas = device["dmas"];
+                devfile.write("#define %s %s\n" % (dmas["controler_name"], dmas["controler_id"]));
+                devfile.write("/* naming indexes in structure dmas[] table */\n");
+                dma_info_list = dmas["dma"];
+                for dma_info in dma_info_list:
+                    devfile.write("#define %s %s\n" % (dma_info["name"], dma_info["value"]));
 
             # global variable declaration
             devfile.write("\nstatic const struct user_driver_device_infos %s_dev_infos = {\n" % device_c_name);

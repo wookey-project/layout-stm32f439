@@ -412,6 +412,16 @@
       "irqs": [
         { "name":"SPI1_IRQ", "value":"51" }
       ],
+      "dmas": {
+          "controler_name":"SPI1_DMA_CTRL",
+          "controler_id":"2",
+          "dma": [
+            { "name":"SPI1_DMA_RX_CHANNEL", "value":"3" },
+            { "name":"SPI1_DMA_RX_STREAM", "value":"2" },
+            { "name":"SPI1_DMA_TX_CHANNEL", "value":"3" },
+            { "name":"SPI1_DMA_TX_STREAM", "value":"3" }
+          ]
+      },
       "read_only": "false",
       "permission": "PERM_RES_DEV_BUSES",
       "enable_register":"r_CORTEX_M_RCC_APB2ENR",
@@ -432,6 +442,16 @@
         { "name":"SPI2_MISO", "port":"GPIO_PB", "pin":"14" },
         { "name":"SPI2_MOSI", "port":"GPIO_PB", "pin":"15" }
       ],
+      "dmas": {
+          "controler_name":"SP2_DMA_CTRL",
+          "controler_id":"1",
+          "dma": [
+            { "name":"SPI2_DMA_RX_CHANNEL", "value":"0" },
+            { "name":"SPI2_DMA_RX_STREAM", "value":"3" },
+            { "name":"SPI2_DMA_TX_CHANNEL", "value":"0" },
+            { "name":"SPI2_DMA_TX_STREAM", "value":"4" }
+          ]
+      },
       "read_only": "false",
       "permission": "PERM_RES_DEV_BUSES",
       "enable_register":"r_CORTEX_M_RCC_APB1ENR",

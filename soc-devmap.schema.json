@@ -31,6 +31,25 @@
                     }
                 }
             },
+            "dmas": {
+                "type":"object",
+
+                "properties": {
+                    "controler_name":"string",
+                    "controler_id":"string",
+                    "dma": {
+                        "type":"array",
+                        "maxItems":4,
+                        "items": {
+                            "types":"object",
+                            "properties": {
+                                "name":  { "type":"string" },
+                                "value": { "type":"string" }
+                            }
+                        }
+                    }
+                }
+            },
             "read_only": { "type":"string", "enum": ["true","false"] },
             "permission": { "type":"string" },
             "enable_register": { "type":"string" },
