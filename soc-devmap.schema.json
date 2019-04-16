@@ -40,7 +40,7 @@
                     "controler_id":"string",
                     "dma": {
                         "type":"array",
-                        "maxItems":4,
+                        "maxItems":8,
                         "items": {
                             "types":"object",
                             "properties": {
