@@ -945,6 +945,7 @@
   {
       "name":"flash-flip-shr",
       "type":"block",
+      "subtype":"memory",
       "address":"0x08008000",
       "size":"0x8000",
       "memory_subregion_mask":"0",

@@ -8,6 +8,7 @@
         "properties": {
             "name": { "type": "string" },
             "type": { "type": "string", "enum": ["block","peripheral"] },
+            "subtype": { "type": "string", "enum": ["controler", "memory", "dma"},
             "address": { "type":"string" },
             "size": { "type":"string" },
             "irqs": { "type":"array",
@@ -47,6 +48,17 @@
                                 "value": { "type":"string" }
                             }
                         }
+                    }
+                }
+            },
+            "sections": {
+                "type":"array",
+                "items": {
+                    "type":"object",
+                    "properties": {
+                        "name":    { "type":"string" },
+                        "address": { "type":"string" },
+                        "size":    { "type":"string" }
                     }
                 }
             },
