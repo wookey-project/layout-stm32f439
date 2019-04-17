@@ -63,8 +63,8 @@ c_header = """/*
 
 c_definition = """
 
-#include "api/types.h"
-#include "api/syscall.h"
+#include "libc/types.h"
+#include "libc/syscall.h"
 
 
 /*
