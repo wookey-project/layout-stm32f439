@@ -6,10 +6,10 @@
 # - address
 # - size
 # - IRQ list
-# - GPIO couple (pin/port) list
-#
+# - GPIO couple (pin/port) list
+
 # each device has its own file header (i.e. usart1.h, usb-otg-fs.h and so on),
-# containing a static const structure named with the device name with
+# containing a static const structure named with the device name with
 # the following pattern: <devname>_dev_infos (e.g. usart1_dev_infos).
 #
 # Generated headers can be included concurrently. They do not require any
@@ -77,7 +77,7 @@ c_definition = """
 */
 
 /*!
-** \\brief Structure defining the STM32 device map
+** @brief Structure defining the STM32 device map
 **
 ** This table is based on doc STMicro RM0090 Reference manual memory map
 ** Only devices that may be registered by userspace are mapped here
