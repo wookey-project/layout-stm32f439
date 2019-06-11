@@ -1075,7 +1075,7 @@
   },
 
   {
-      "name":"flash-optbytes-bank1",
+      "name":"flash-opt1",
       "type":"block",
       "address":"0x1FFFC000",
       "size":"0x20",
@@ -1086,7 +1086,7 @@
       "enable_register_bits": ["0"]
   },
   {
-      "name":"flash-optbytes-bank2",
+      "name":"flash-opt2",
       "type":"block",
       "address":"0x1FFEC000",
       "size":"0x20",
